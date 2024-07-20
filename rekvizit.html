@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>InDeco</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/just-validate.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="text-bg-dark">
+      <div class="container border-nav p-2">
+        <div class="nav d-flex align-items-end nav-top-media">
+          <div class="px-1 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/marker.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-nav-top d-flex justify-content-end d-none d-sm-block"
+          >
+            <p>г. Пенза ул. Пушкина, 43</p>
+          </div>
+          <div class="px-2 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/time.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex text-time me-auto d-none d-sm-block">
+            <p>Пн-Пт с 10:00 - 19:00 Сб с 10:00 - 15:00</p>
+          </div>
+          <div
+            class="social-top px-1 d-flex align-items-end justify-content-center"
+          >
+            <p class="m-0 pe-2 d-none d-lg-block">Напиши нам:</p>
+            <div>
+              <a
+                class="whatsapp-media"
+                target="_blank"
+                href="https://wa.me/+79273680612"
+              >
+                <img
+                  id="whatsapp"
+                  class="img-bord img-fluid img-size"
+                  src="/img/whatsapp.svg"
+                  alt=""
+              /></a>
+              <a
+                class="telegram-media"
+                target="_blank"
+                href="https://t.me/INDECO_PNZ"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/telegram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="vk-media"
+                target="_blank"
+                href="https://vk.com/svetlana_uluybina"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/vk.svg"
+                  alt=""
+              /></a>
+              <a
+                class="instagram-media"
+                target="_blank"
+                href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/instagram.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="d-flex align-items-center number-phone d-block d-sm-none"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="d-flex text-bg-dark mb-0 sticky-top">
+      <div class="container px-0">
+        <div class="row">
+          <div class="p-0 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg">
+              <a href="#" class="navbar-brand nav-left d-xxl-none">
+                <img src="/img/logoMain.jpg" width="220" height="50" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav align-items-center">
+                  <li>
+                    <a href="/index.html" class="nav-link text-nav-animation"
+                      >ГЛАВНАЯ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#price')"
+                      class="nav-link price-scroll text-nav-animation"
+                      >ЦЕНЫ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#catalog')"
+                      class="nav-link btn-catalog text-nav-animation"
+                      >ПОРТФОЛИО</a
+                    >
+                  </li>
+
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mx-5 d-none d-xxl-block"
+                  >
+                    <img
+                      src="/img/logoMain.jpg"
+                      width="220"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <li>
+                    <a href="uslugi.html" class="nav-link text-nav-animation"
+                      >УСЛУГИ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="company.html"
+                      class="nav-link text-nav-animation nav-text-media"
+                      >О НАС</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-nav-animation"
+                      >КОНТАКТЫ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="d-flex align-items-center number-phone mb-auto d-none d-sm-block"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord mb-1" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container title-line my-5">
+        <div class="row d-flex justify-content-center">
+          <span class="my-5 d-flex justify-content-center"
+            >Реквезиты и адреса</span
+          >
+          <div
+            class="col-12 col-sm-6 col-md-3 col-xxl-6 m-2 p-3 my-5 text-order"
+          >
+            <span
+              >Индивидуальный предприниматель <br />
+              Улыбина Светлана Анатольевна</span
+            >
+            <p>ИНН: 11111111111</p>
+            <p>ОГРНИП: 222222222222</p>
+            <p>Расчетный счет: № 33333333333333</p>
+            <p>Публичное акционерное общество «Сбербанк России»</p>
+            <p>Корреспондентский счет: № 4444444444444444444</p>
+            <p>БИК 555555555555555</p>
+            <p>Фактический Адрес: г. Пенза, ул. Пушкина, 43</p>
+            <p>Телефон: +7 (927) 368-06-12</p>
+            <p>E-mail: 7.am@mail.ru</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="email-holder">
+      <div
+        class="p-4 d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-send img-bord"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+          />
+        </svg>
+        <div class="text-email p-3">
+          <span>
+            Будьте в курсе наших <br />
+            акций и новостей
+          </span>
+        </div>
+
+        <form class="email-validate validate form5" novalidate>
+          <div class="d-flex align-items-start">
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control form-email rounded-0 input-mail5"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-tf" type="button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="pt-5 footer-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 mb-3">
+            <span>ИНФОРМАЦИЯ</span>
+            <div class="d-flex flex-column">
+              <a class="text-white-50">Адрес :</a>
+
+              <div class="d-flex justify-content-center">
+                <p class="text-white p-1">г. Пенза, ул. Пушкина, 43</p>
+              </div>
+
+              <a class="pb-1 text-white-50">Режим работы :</a>
+
+              <p class="p-0 text-white">Пн - Пт c 10:00 - 19:00</p>
+              <p class="p-0 text-white">Сб c 10:00 - 15:00</p>
+              <p class="p-0 text-white">Вск Выходной</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <span>ДЛЯ КЛИЕНТА</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/-/CCU7b4FC0B"
+                class="text-client p-1"
+                >Где мы находимся</a
+              >
+
+              <a href="/rekvizit.html" class="text-client p-1">Реквизиты</a>
+
+              <a href="/oferta.html" class="text-client p-1"
+                >Публичная оферта</a
+              >
+
+              <a href="/privacy-policy.html" class="text-client p-1"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 mb-3">
+            <span>КОНТАКТЫ</span>
+            <div class="d-flex flex-column text-number">
+              <a class="text-white-50">Номера телефонов :</a>
+              <div class="pt-1 d-flex justify-content-center">
+                <p class="">8 (8412) 22-19-17</p>
+              </div>
+              <p class="">8 (927) 368-06-12</p>
+
+              <p class="pb-1 text-white-50">Почта :</p>
+              <div class="d-flex justify-content-center">
+                <a href="mailto:" class="text-mail p-0 ps-2">7.am@mail.ru</a>
+              </div>
+
+              <div class="list-unstyled d-flex justify-content-center pt-2">
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://wa.me/+79273680612"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/whatsapp.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/instagram.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://vk.com/svetlana_uluybina"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/vk.svg"
+                    alt=""
+                /></a>
+                <a class="p-1" target="_blank" href="https://t.me/INDECO_PNZ">
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/telegram.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-white-50 d-flex flex-column flex-sm-row justify-content-center pt-4 my-4 border-top"
+          >
+            <p>&copy; ( 2023 г. ) Компания, InDeco. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ajmail.js"></script>
+    <script src="js/scrollRek.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

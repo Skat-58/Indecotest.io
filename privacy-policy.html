@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>InDeco</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/just-validate.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="text-bg-dark">
+      <div class="container border-nav p-2">
+        <div class="nav d-flex align-items-end nav-top-media">
+          <div class="px-1 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/marker.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-nav-top d-flex justify-content-end d-none d-sm-block"
+          >
+            <p>г. Пенза ул. Пушкина, 43</p>
+          </div>
+          <div class="px-2 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/time.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex text-time me-auto d-none d-sm-block">
+            <p>Пн-Пт с 10:00 - 19:00 Сб с 10:00 - 15:00</p>
+          </div>
+          <div
+            class="social-top px-1 d-flex align-items-end justify-content-center"
+          >
+            <p class="m-0 pe-2 d-none d-lg-block">Напиши нам:</p>
+            <div>
+              <a
+                class="whatsapp-media"
+                target="_blank"
+                href="https://wa.me/+79273680612"
+              >
+                <img
+                  id="whatsapp"
+                  class="img-bord img-fluid img-size"
+                  src="/img/whatsapp.svg"
+                  alt=""
+              /></a>
+              <a
+                class="telegram-media"
+                target="_blank"
+                href="https://t.me/INDECO_PNZ"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/telegram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="vk-media"
+                target="_blank"
+                href="https://vk.com/svetlana_uluybina"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/vk.svg"
+                  alt=""
+              /></a>
+              <a
+                class="instagram-media"
+                target="_blank"
+                href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/instagram.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="d-flex align-items-center number-phone d-block d-sm-none"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="d-flex text-bg-dark mb-0 sticky-top">
+      <div class="container px-0">
+        <div class="row">
+          <div class="p-0 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg">
+              <a href="#" class="navbar-brand nav-left d-xxl-none">
+                <img src="/img/logoMain.jpg" width="220" height="50" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav align-items-center">
+                  <li>
+                    <a href="/index.html" class="nav-link text-nav-animation"
+                      >ГЛАВНАЯ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#price')"
+                      class="nav-link price-scroll text-nav-animation"
+                      >ЦЕНЫ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#catalog')"
+                      class="nav-link btn-catalog text-nav-animation"
+                      >ПОРТФОЛИО</a
+                    >
+                  </li>
+
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mx-5 d-none d-xxl-block"
+                  >
+                    <img
+                      src="/img/logoMain.jpg"
+                      width="220"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <li>
+                    <a href="uslugi.html" class="nav-link text-nav-animation"
+                      >УСЛУГИ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="company.html"
+                      class="nav-link text-nav-animation nav-text-media"
+                      >О НАС</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-nav-animation"
+                      >КОНТАКТЫ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="d-flex align-items-center number-phone mb-auto d-none d-sm-block"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord mb-1" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container mb-5">
+        <div class="title-line">
+          <span class="my-5 d-flex justify-content-center">
+            Политика конфиденциальности
+          </span>
+        </div>
+        <div
+          class="row m-1 text-privacy d-flex flex-column align-items-center justify-content-center"
+        >
+          <p class="mb-3">
+            Настоящая Политика конфиденциальности персональной информации (далее
+            — Политика) действует в отношении всей информации, которую
+            Индивидуальный предприниматель Улыбина Светлана Анатольевна, ИНН
+            ------------, и/или его аффилированные лица, могут получить о
+            Пользователе во время использования им сайта indeco58.ru.
+            Использование сайта indeco58.ru означает безоговорочное согласие
+            Пользователя с настоящей Политикой и указанными в ней условиями
+            обработки его персональной информации; в случае несогласия с этими
+            условиями Пользователь должен воздержаться от использования данного
+            ресурса.
+          </p>
+
+          <span class="mb-2" style="text-decoration: underline">
+            1. Персональная информация пользователей, которую получает и
+            обрабатывает сайт indeco58.ru
+          </span>
+          <p class="mb-3">
+            <span>1.1.</span> В рамках настоящей Политики под «персональной
+            информацией пользователя» понимаются: <br />
+            <span>1.1.1.</span> Персональная информация, которую Пользователь
+            предоставляет о себе самостоятельно при заполнении формы обратной
+            связи: Имя, телефон, электронная почта. <br />
+            <span>1.1.2.</span> Данные, которые автоматически передаются сайтом
+            indeco58.ru в процессе его использования с помощью установленного на
+            устройстве пользователя программного обеспечения, в том числе
+            IP-адрес, информация из cookie, информация о браузере пользователя
+            (или иной программе, с помощью которой осуществляется доступ к
+            сайту), время доступа, адрес запрашиваемой страницы. <br />
+            <span>1.2.</span> Настоящая Политика применима только к сайту
+            indeco58.ru и не контролирует, и не несет ответственность за сайты
+            третьих лиц, на которые Пользователь может перейти по ссылкам,
+            доступным на сайте indeco58.ru. На таких сайтах у пользователя может
+            собираться или запрашиваться иная персональная информация, а также
+            могут совершаться иные действия. <br />
+            <span>1.3.</span> Сайт в общем случае не проверяет достоверность
+            персональной информации, предоставляемой пользователями, и не
+            осуществляет контроль за их дееспособностью. Однако сайт indeco58.ru
+            исходит из того, что Пользователь предоставляет достоверную и
+            достаточную персональную информацию по вопросам, предлагаемым в
+            формах настоящего ресурса, и поддерживает эту информацию в
+            актуальном состоянии.
+          </p>
+          <span class="mb-2" style="text-decoration: underline">
+            2. Цели сбора и обработки персональной информации пользователей
+          </span>
+          <p class="mb-3">
+            <span>2.1.</span> Сайт собирает и хранит только те персональные
+            данные, которые необходимы для оказания услуг или предоставления
+            иных ценностей для посетителей сайта indeco58.ru. <br />
+            <span>2.2.</span> Персональную информацию пользователя можно
+            использовать в следующих целях: <br />
+            <span>2.2.1.</span> Идентификация стороны в рамках соглашений и
+            договоров с сайтом и ИП Амеличкиной Е.В; <br />
+            <span>2.2.2.</span> Предоставление пользователю персонализированных
+            услуг и сервисов, товаров и иных ценностей; <br />
+            <span>2.2.3.</span> Связь с пользователем, в том числе направление
+            уведомлений, запросов и информации, касающихся использования сайта,
+            оказания услуг, а также обработка запросов и заявок от пользователя;
+            <br />
+            <span>2.2.4.</span> Улучшение качества сайта, удобства его
+            использования, разработка новых услуг.
+          </p>
+
+          <span class="mb-2" style="text-decoration: underline">
+            3. Условия обработки персональной информации пользователя и её
+            передачи третьим лицам
+          </span>
+          <p class="mb-3">
+            <span>3.1.</span> Сайт indeco58.ru хранит персональную информацию
+            Пользователей в соответствии с внутренним регламентом
+            Индивидуального предпринимателя Амеличкиной Елены Викторовны и
+            законодательством РФ.
+            <br />
+            <span>3.2.</span> В отношении персональной информации Пользователя
+            сохраняется ее конфиденциальность, кроме случаев добровольного
+            предоставления пользователем информации о себе для общего доступа
+            неограниченному кругу лиц. <br />
+            <span>3.3.</span> Сайт indeco58.ru вправе передать персональную
+            информацию пользователя третьим лицам в следующих случаях: <br />
+            <span>3.3.1.</span> Пользователь выразил свое согласие на такие
+            действия, путем согласия, выразившегося в предоставлении таких
+            данных; <br />
+            <span>3.3.2.</span> Передача необходима в рамках использования
+            Пользователем сайта indeco58.ru, либо для оказания услуги
+            Пользователю; <br />
+            <span>3.3.3.</span> Передача предусмотрена российским
+            законодательством в рамках установленной законодательством
+            процедуры; <br />
+            <span>3.3.4.</span> В целях обеспечения возможности защиты прав и
+            законных интересов сайта indeco58.ru или третьих лиц в случаях,
+            когда Пользователь нарушает Пользовательское соглашение сайта
+            indeco58.ru.
+            <br />
+            <span>3.4.</span> При обработке персональных данных пользователей
+            сайт indeco58.ru руководствуется Федеральным законом РФ «О
+            персональных данных».
+          </p>
+
+          <span class="mb-2" style="text-decoration: underline"
+            >4. Изменение пользователем персональной информации</span
+          >
+          <p class="mb-3">
+            <span>4.1.</span> Пользователь может в любой момент изменить
+            (обновить, дополнить) предоставленную им персональную информацию или
+            её часть, а также параметры её конфиденциальности, отправив
+            заявление в простой письменной форме в адрес администрации сайта
+            через электронную почту: <a href="mailto:">7.am@mail.ru</a> <br />
+            <span>4.2.</span> Пользователь может в любой момент, отозвать свое
+            согласие на обработку персональных данных, отправив заявление в
+            простой письменной форме в адрес администрации сайта через
+            электронную почту:
+            <a href="mailto:">7.am@mail.ru</a>
+          </p>
+
+          <span class="mb-2" style="text-decoration: underline">
+            5. Меры, применяемые для защиты персональной информации
+            пользователей
+          </span>
+          <p class="mb-3">
+            <span>5.1.</span> Сайт принимает необходимые и достаточные
+            организационные и технические меры для защиты персональной
+            информации пользователя от неправомерного или случайного доступа,
+            уничтожения, изменения, блокирования, копирования, распространения,
+            а также от иных неправомерных действий с ней третьих лиц.
+          </p>
+
+          <span class="mb-2" style="text-decoration: underline">
+            6. Изменение Политики конфиденциальности. Применимое
+            законодательство
+          </span>
+          <p class="mb-3">
+            <span>6.1.</span> Сайт имеет право вносить изменения в настоящую
+            Политику конфиденциальности. При внесении изменений в актуальной
+            редакции указывается дата последнего обновления. Новая редакция
+            Политики вступает в силу с момента ее размещения, если иное не
+            предусмотрено новой редакцией Политики. Действующая редакция всегда
+            находится на странице по адресу:
+            <a href="/">https://indeco58.ru/privacy-policy</a> <br />
+            <span>6.2.</span> К настоящей Политике и отношениям между
+            пользователем и Сайтом, возникающим в связи с применением Политики
+            конфиденциальности, подлежит применению право Российской Федерации.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="email-holder">
+      <div
+        class="p-4 d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-send img-bord"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+          />
+        </svg>
+        <div class="text-email p-3">
+          <span>
+            Будьте в курсе наших <br />
+            акций и новостей
+          </span>
+        </div>
+
+        <form class="email-validate validate form5" novalidate>
+          <div class="d-flex align-items-start">
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control form-email rounded-0 input-mail5"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-tf" type="button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="pt-5 footer-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 mb-3">
+            <span>ИНФОРМАЦИЯ</span>
+            <div class="d-flex flex-column">
+              <a class="text-white-50">Адрес :</a>
+
+              <div class="d-flex justify-content-center">
+                <p class="text-white p-1">г. Пенза, ул. Пушкина, 43</p>
+              </div>
+
+              <a class="pb-1 text-white-50">Режим работы :</a>
+
+              <p class="p-0 text-white">Пн - Пт c 10:00 - 19:00</p>
+              <p class="p-0 text-white">Сб c 10:00 - 15:00</p>
+              <p class="p-0 text-white">Вск Выходной</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <span>ДЛЯ КЛИЕНТА</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/-/CCU7b4FC0B"
+                class="text-client p-1"
+                >Где мы находимся</a
+              >
+
+              <a href="/rekvizit.html" class="text-client p-1">Реквизиты</a>
+
+              <a href="/oferta.html" class="text-client p-1"
+                >Публичная оферта</a
+              >
+
+              <a href="/privacy-policy.html" class="text-client p-1"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 mb-3">
+            <span>КОНТАКТЫ</span>
+            <div class="d-flex flex-column text-number">
+              <a class="text-white-50">Номера телефонов :</a>
+              <div class="pt-1 d-flex justify-content-center">
+                <p class="">8 (8412) 22-19-17</p>
+              </div>
+              <p class="">8 (927) 368-06-12</p>
+
+              <p class="pb-1 text-white-50">Почта :</p>
+              <div class="d-flex justify-content-center">
+                <a href="mailto:" class="text-mail p-0 ps-2">7.am@mail.ru</a>
+              </div>
+
+              <div class="list-unstyled d-flex justify-content-center pt-2">
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://wa.me/+79273680612"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/whatsapp.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/instagram.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://vk.com/svetlana_uluybina"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/vk.svg"
+                    alt=""
+                /></a>
+                <a class="p-1" target="_blank" href="https://t.me/INDECO_PNZ">
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/telegram.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-white-50 d-flex flex-column flex-sm-row justify-content-center pt-4 my-4 border-top"
+          >
+            <p>&copy; ( 2023 г. ) Компания, InDeco. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ajmail.js"></script>
+    <script src="js/scrollPriv.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

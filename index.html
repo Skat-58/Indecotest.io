@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>InDeco</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/just-validate.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <span>INDECO</span>
+      </div>
+    </div>
+
+    <header class="text-bg-dark">
+      <div class="container border-nav p-2">
+        <div class="nav d-flex align-items-end nav-top-media">
+          <div class="px-1 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/marker.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-nav-top d-flex justify-content-end d-none d-sm-block"
+          >
+            <p>г. Пенза ул. Пушкина, 43</p>
+          </div>
+          <div class="px-2 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/time.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex text-time me-auto d-none d-sm-block">
+            <p>Пн-Пт с 10:00 - 19:00 Сб с 10:00 - 15:00</p>
+          </div>
+          <div
+            class="social-top px-1 d-flex align-items-end justify-content-center"
+          >
+            <p class="m-0 pe-2 d-none d-lg-block">Напиши нам:</p>
+            <div>
+              <a
+                class="whatsapp-media"
+                target="_blank"
+                href="https://wa.me/+79273680612"
+              >
+                <img
+                  id="whatsapp"
+                  class="img-bord img-fluid img-size"
+                  src="/img/whatsapp.svg"
+                  alt=""
+              /></a>
+              <a
+                class="telegram-media"
+                target="_blank"
+                href="https://t.me/INDECO_PNZ"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/telegram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="vk-media"
+                target="_blank"
+                href="https://vk.com/svetlana_uluybina"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/vk.svg"
+                  alt=""
+              /></a>
+              <a
+                class="instagram-media"
+                target="_blank"
+                href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/instagram.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="d-flex align-items-center number-phone d-block d-sm-none"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="d-flex text-bg-dark mb-0 sticky-top">
+      <div class="container px-0">
+        <div class="row">
+          <div class="p-0 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg">
+              <a href="#" class="navbar-brand nav-left d-xxl-none">
+                <img src="/img/logoMain.jpg" width="220" height="50" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav align-items-center">
+                  <li>
+                    <a href="#" class="nav-link text-nav-animation">ГЛАВНАЯ</a>
+                  </li>
+                  <li>
+                    <a
+                      href="#price"
+                      onclick="slowScroll('#price')"
+                      class="nav-link price-scroll text-nav-animation"
+                      >ЦЕНЫ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#catalog"
+                      onclick="slowScroll('#catalog')"
+                      class="nav-link btn-catalog text-nav-animation"
+                      >ПОРТФОЛИО</a
+                    >
+                  </li>
+
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mx-5 d-none d-xxl-block"
+                  >
+                    <img
+                      src="/img/logoMain.jpg"
+                      width="220"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <li>
+                    <a href="uslugi.html" class="nav-link text-nav-animation"
+                      >УСЛУГИ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="company.html"
+                      class="nav-link text-nav-animation nav-text-media"
+                      >О НАС</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-nav-animation"
+                      >КОНТАКТЫ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="d-flex align-items-center number-phone mb-auto d-none d-sm-block"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord mb-1" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid carousel-nopadding">
+      <div class="swiper swiperMain rounded-0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sw-bg">
+            <picture>
+              <source srcset="/img/slider/1.webp" type="image/webp" />
+              <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+              <img src="/img/slider/1.jpg" alt=""
+            /></picture>
+            <div class="d-flex flex-column slide-text">
+              <h1 class="slide__title">
+                КУПИТЬ ШТОРЫ <br />
+                В ПЕНЗЕ
+              </h1>
+              <!-- <div class="text-center index-btn">
+                <button class="btn-main order-price mt-3" type="button">
+                  Узнать стоимость
+                </button>
+              </div> -->
+            </div>
+          </div>
+          <div class="swiper-slide sw-bg">
+            <picture>
+              <source srcset="/img/slider/2.webp" type="image/webp" />
+              <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+              <img src="/img/slider/2.jpg" alt=""
+            /></picture>
+            <div class="d-flex flex-column slide-text">
+              <h1 class="slide__title">ШТОРЫ НА ЗАКАЗ</h1>
+              <p class="slide__link">IN DECO <br />Студия текстиля</p>
+            </div>
+          </div>
+          <div class="swiper-slide sw-bg">
+            <picture>
+              <source srcset="/img/slider/3.webp" type="image/webp" />
+              <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+              <img src="/img/slider/3.jpg" alt=""
+            /></picture>
+            <div class="d-flex flex-column slide-text">
+              <h1 class="slide__title">ШТОРЫ НА ЗАКАЗ</h1>
+              <p class="slide__link">IN DECO <br />Студия текстиля</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next sw-next"></div>
+        <div class="swiper-button-prev sw-prev"></div>
+        <div class="swiper-pagination pag-1"></div>
+      </div>
+
+      <div class="container-fluid p-0">
+        <div class="row bg-white">
+          <div class="mb-5">
+            <div
+              class="my-5 title-port title-line d-flex flex-column justify-content-center"
+            >
+              <span class="my-4">Как мы работаем</span>
+              <h2 class="mb-4">Заказать шторы у нас очень просто</h2>
+            </div>
+            <div class="container maxwidth-block">
+              <div class="row m-5 text-center d-flex justify-content-center">
+                <div class="py-3 col-12 col-sm-3 col-md-4 col-lg-2">
+                  <div class="text-work">
+                    <span>1</span>
+                  </div>
+                  <div class="text-working">
+                    <span>Выбирем</span>
+                    <p>Какого дизайна будет ваш текстиль</p>
+                  </div>
+                </div>
+                <div class="py-3 col-12 col-sm-3 col-md-4 col-lg-2">
+                  <div class="text-work">
+                    <span>2</span>
+                  </div>
+                  <div class="text-working">
+                    <span>Поможем</span>
+                    <p>Преобразить интерьер помещения</p>
+                  </div>
+                </div>
+                <div class="py-3 col-12 col-sm-3 col-md-4 col-lg-2">
+                  <div class="text-work">
+                    <span>3</span>
+                  </div>
+                  <div class="text-working">
+                    <span>Подберем</span>
+                    <p>Карнизы, варианты их крепления</p>
+                  </div>
+                </div>
+                <div class="py-3 col-12 col-sm-3 col-md-4 col-lg-2">
+                  <div class="text-work">
+                    <span>4</span>
+                  </div>
+                  <div class="text-working">
+                    <span>Предложим</span>
+                    <p>Покрывала, декоративные подушки</p>
+                  </div>
+                </div>
+                <div class="py-3 col-12 col-sm-3 col-md-4 col-lg-2">
+                  <div class="text-work">
+                    <span>5</span>
+                  </div>
+                  <div class="text-working">
+                    <span>В финале</span>
+                    <p>Наши мастера произведут навеску штор</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mb-5 col-sm-12 d-flex flex-nowrap btn-media justify-content-center"
+            >
+              <button class="btn-work order-price" type="button">
+                Заказать
+              </button>
+            </div>
+          </div>
+
+          <div class="line-pl">
+            <div class="container">
+              <div
+                class="row my-5 text-start align-items-center justify-content-center"
+              >
+                <div
+                  class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 py-2 d-flex"
+                >
+                  <img
+                    class="img-fluid img-bord img-bord-width"
+                    src="img/track.svg"
+                    alt=""
+                  />
+                  <div class="text-infobord text-workBord ps-4">
+                    <span>Работаем по городу</span>
+                    <p>Пенза и Пензенской области и за ее пределами</p>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 py-2 d-flex"
+                >
+                  <img
+                    class="img-fluid img-bord img-bord-width"
+                    src="img/calendar.svg"
+                    alt=""
+                  />
+                  <div class="text-infobord ps-4">
+                    <span>Большой опыт работы</span>
+                    <p>
+                      25 лет безупречного качества и тысячи довольных клиентов
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 py-2 d-flex"
+                >
+                  <img
+                    class="img-fluid img-bord img-bord-width"
+                    src="img/gem.svg"
+                    alt=""
+                  />
+                  <div class="text-infobord ps-4">
+                    <span>За качество отвечаем</span>
+                    <p>
+                      Мы прорабатываем каждый проект до самых мелких деталей
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 py-2 d-flex"
+                >
+                  <img
+                    class="img-fluid img-bord img-bord-width"
+                    src="img/cash.svg"
+                    alt=""
+                  />
+                  <div class="text-infobord ps-4">
+                    <span>Только у нас лучшие цены</span>
+                    <p>Мы готовы предложить шторы под любой ваш бюджет</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container my-4">
+            <div class="row my-5 justify-content-center">
+              <div
+                class="col-xxl-3 d-flex flex-column align-items-center justify-content-center title-port title-line"
+              >
+                <span>
+                  Приглашаем <br />
+                  вас в салон штор
+                </span>
+                <p class="p-5 text-mediaSalon">
+                  С образцами тканей, готовых решений и декоративных элементов
+                </p>
+              </div>
+
+              <div class="slider-container mb-5">
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-container" style="max-width: 1000px">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiper-opi">
+                        <picture>
+                          <source
+                            srcset="/img/salon/salon1.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="/img/salon/salon1.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid salon-img"
+                            src="/img/salon/salon1.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <div class="swiper-slide swiper-opi">
+                        <picture>
+                          <source
+                            srcset="/img/salon/salon2.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="/img/salon/salon2.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid salon-img"
+                            src="/img/salon/salon2.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <div class="swiper-slide swiper-opi">
+                        <picture>
+                          <source
+                            srcset="/img/salon/salon3.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="/img/salon/salon3.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid salon-img"
+                            src="/img/salon/salon3.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <div class="swiper-slide swiper-opi">
+                        <picture>
+                          <source
+                            srcset="/img/salon/salon4.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="/img/salon/salon4.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid salon-img"
+                            src="/img/salon/salon4.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <div class="swiper-slide swiper-opi">
+                        <picture>
+                          <source
+                            srcset="/img/salon/salon5.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="/img/salon/salon5.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid salon-img"
+                            src="/img/salon/salon5.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                    </div>
+                    <div class="slider-buttons-s mt-1">
+                      <button class="swiper-button-prev-s m-2"></button>
+                      <button class="swiper-button-next-s m-2"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container-fluid p-0 bg-line d-flex flex-column align-items-center"
+        >
+          <div class="mt-5 mb-3 title-line d-flex">
+            <span>Наши приемущества</span>
+          </div>
+          <div class="line-grey text-advantages mb-5">
+            <div class="mt-4 mb-5 text-center text-mediaYear">
+              <span>Занимаемся любимым делом с 1998г.</span>
+            </div>
+            <div class="row justify-content-around text-win">
+              <div
+                class="col-11 col-sm-5 col-xl-3 p-2 m-3"
+                data-aos="fade-right"
+              >
+                <span class="mb-3">Отвечаем за качество</span>
+                <p>Все заказы выполняем на</p>
+                <div class="text-production mt-2">
+                  Cобственном <br />
+                  производстве
+                </div>
+              </div>
+
+              <div class="col-11 col-sm-5 col-xl-3 p-2 m-3" data-aos="flip-up">
+                <span class="mb-3">Лучшие специалисты</span>
+                <p>В нашей команде специалисты</p>
+                <div class="text-production mt-2">
+                  C опытом работы <br />
+                  более 20 лет
+                </div>
+              </div>
+
+              <div
+                class="col-11 col-sm-5 col-xl-3 p-2 m-3"
+                data-aos="fade-left"
+              >
+                <span class="mb-3">Все новое у нас</span>
+                <p>Всегда новые коллекции тканей из</p>
+                <div class="text-production mt-2">
+                  Европы, Турции<br />Индии, Китая
+                </div>
+              </div>
+
+              <div
+                class="col-11 col-sm-5 col-xl-3 p-2 m-3"
+                data-aos="fade-right"
+              >
+                <span class="mb-3">Нестандартный размер?</span>
+                <p>Выполним любые работы</p>
+                <div class="text-production mt-2">
+                  Для нас нет понятия не стандартно!
+                </div>
+              </div>
+
+              <div class="col-11 col-sm-5 col-xl-3 p-2 m-3" data-aos="flip-up">
+                <span class="mb-3">Безупречная репутация</span>
+                <p>Большой опыт работы позволяющий</p>
+                <div class="text-production mt-2">
+                  Выполнить эксклюзивное оформление
+                </div>
+              </div>
+
+              <div
+                class="col-11 col-sm-5 col-xl-3 p-2 m-3"
+                data-aos="fade-left"
+              >
+                <span class="mb-3">Опытные дизайнеры</span>
+                <p>Наши дизайнеры предлагают</p>
+                <div class="text-production mt-2">
+                  Только модные тендеции и новинки
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-line d-flex justify-content-center">
+            <span>Наши клиенты:</span>
+          </div>
+        </div>
+
+        <div class="bg-white py-5">
+          <div class="container border-width">
+            <div class="row">
+              <div
+                class="py-3 d-flex flex-wrap align-items-center justify-content-center"
+              >
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo"
+                    src="img/logo/erevan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo-4"
+                    src="img/logo/uchilishe.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo"
+                    src="img/logo/filarmonia.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo"
+                    src="img/logo/koroli.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo-1"
+                    src="img/logo/biblioteka.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo"
+                    src="img/logo/kkz.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo-2"
+                    src="img/logo/sovitskogo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-6 col-sm-5 col-md-3 p-2 d-flex justify-content-center"
+                >
+                  <img
+                    class="img-fluid img-logo-3"
+                    src="img/logo/muzei.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="catalog" class="container-fluid animations-grid line-pl pb-3">
+          <div class="mb-5">
+            <div class="title-port p-3 my-5">
+              <div class="title-line d-flex flex-column">
+                <span>Портфолио</span>
+                <h2>Шьем любые виды штор на заказ</h2>
+              </div>
+            </div>
+            <div class="row p-0 mt-3 mx-0">
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/gostinya.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/gostinya.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/gostinya.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex align-items-end justify-content-center"
+                      >
+                        <h2>Г<span>остиная</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button class="btn-an-grid one-modal p-2">
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/zal.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/zal.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/zal.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex align-items-end justify-content-center"
+                      >
+                        <h2>В<span>торой</span> С<span>вет</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button class="btn-an-grid two-modal p-2" type="button">
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/kuhnya.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/kuhnya.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/kuhnya.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex flex-wrap align-items-end justify-content-center"
+                      >
+                        <h2>К<span>ухня</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button
+                          class="btn-an-grid three-modal p-2"
+                          type="button"
+                        >
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/spalnya.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/spalnya.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/spalnya.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex align-items-end justify-content-center"
+                      >
+                        <h2>С<span>пальня</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button
+                          class="btn-an-grid four-modal p-2"
+                          type="button"
+                        >
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/detskya.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/detskya.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/detskya.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex align-items-end justify-content-center"
+                      >
+                        <h2>Д<span>етская</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button
+                          class="btn-an-grid five-modal p-2"
+                          type="button"
+                        >
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 p-0">
+                <div class="card m-2 text-white border-0">
+                  <figure class="animations-work card-img m-0">
+                    <picture>
+                      <source
+                        srcset="img/portfolio/sanyzel.webp"
+                        type="image/webp" />
+                      <source
+                        srcset="img/portfolio/sanyzel.jpg"
+                        type="image/jpeg" />
+                      <img src="img/portfolio/sanyzel.jpg" alt=""
+                    /></picture>
+                    <figcaption>
+                      <div
+                        class="card-img-overlay d-flex align-items-end justify-content-center"
+                      >
+                        <h2>С<span>анузел</span></h2>
+                      </div>
+                      <p class="d-flex justify-content-center p-2 mt-5">
+                        <button class="btn-an-grid six-modal p-2" type="button">
+                          Посмотреть
+                        </button>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white">
+          <div
+            id="price"
+            class="container-fluid line-grey"
+            style="max-width: 1700px"
+          >
+            <div class="row justify-content-center">
+              <div class="p-2 mb-5">
+                <div
+                  class="col-12 col-md-12 col-lg-12 col-lg-12 title-line pt-5 d-flex align-items-center justify-content-center"
+                >
+                  <h2>Цены на пошив штор</h2>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-sm-9 col-lg-8 col-xl-9 mb-5 text-advantages title-port"
+              >
+                <div class="logo-price d-flex flex-column text-start">
+                  IN DECO
+                </div>
+                <p class="text-start text-mediaIndeco">
+                  воплотит любые, даже самые смелые идеи <br />
+                  текстильного декорирования помещений
+                </p>
+              </div>
+              <div class="container mt-5">
+                <div class="row justify-content-center mb-5">
+                  <div
+                    class="col-10 col-sm-9 col-md-5 col-lg-5 col-xl-3 m-3 p-0 block-price d-flex flex-column align-items-start justify-content-center"
+                  >
+                    <div class="title-price">
+                      <div>
+                        <picture>
+                          <source
+                            srcset="img/price/price1.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="img/price/price1.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid img-price"
+                            src="img/price/price1.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <span>Эконом</span>
+                      <div class="text-main-price">от 20 000 руб</div>
+                      <div class="p-3">
+                        <p>
+                          Шторы прямого кроя из ткани класса эконом на
+                          стандартной шторной ленте без подкладки
+                        </p>
+                      </div>
+
+                      <div class="price-button">
+                        <button class="btn-price order-price" type="button">
+                          Узнать стоимость
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-10 col-sm-9 col-md-5 col-lg-5 col-xl-3 m-3 p-0 block-price d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="title-price">
+                      <div>
+                        <picture>
+                          <source
+                            srcset="img/price/price3.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="img/price/price3.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid img-price"
+                            src="img/price/price3.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <span>Стандарт</span>
+                      <div class="text-main-price">от 40 000 руб</div>
+                      <div class="p-3">
+                        <p>
+                          Шторы прямого кроя из ткани класса стандарт с декором,
+                          кантом, на фигурной ленте
+                        </p>
+                      </div>
+
+                      <div class="price-button">
+                        <button class="btn-price order-price" type="button">
+                          Узнать стоимость
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-10 col-sm-9 col-md-5 col-lg-5 col-xl-3 m-3 p-0 block-price d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="title-price">
+                      <div>
+                        <picture>
+                          <source
+                            srcset="img/price/price2.webp"
+                            type="image/webp" />
+                          <source
+                            srcset="img/price/price2.jpg"
+                            type="image/jpeg" />
+                          <img
+                            class="img-fluid img-price"
+                            src="img/price/price2.jpg"
+                            alt=""
+                        /></picture>
+                      </div>
+                      <span>Премиум</span>
+                      <div class="text-main-price">от 60 000 руб</div>
+                      <div class="p-3">
+                        <p>
+                          Класс премиум с ручной складкой, на подкладке, с
+                          декоративной отделкой
+                        </p>
+                      </div>
+                      <div class="price-button">
+                        <button class="btn-price order-price" type="button">
+                          Узнать стоимость
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="d-flex flex-column">
+            <div
+              class="container title-line border-top line-grey col-sm-9 col-md-12 my-5"
+            >
+              <span class="mt-5">Предоставляем услуги по уходу за шторами</span>
+              <p class="mt-4 text-services">
+                Профессиональная стирка и чистка штор.
+              </p>
+            </div>
+
+            <div class="container line-grey inf-bord">
+              <div class="row justify-content-center">
+                <div
+                  data-aos="fade-right"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/track.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Выезд к вам для снятия штор</span>
+                    <p class="my-2">
+                      Профессионалы с опытом работы более 10 лет
+                    </p>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/cloud-s.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Оперативность</span>
+                    <p class="my-2">
+                      Чистка штор выполняется в максимально кратчайшие сроки
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="fade-right"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 mb-1 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/person-x-s.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Никаких предоплат</span>
+                    <p class="my-2">
+                      Оплата происходит строго по факту выполненных работ
+                    </p>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 mb-1 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/bag-check-s.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Доступные цены</span>
+                    <p class="my-2">
+                      За долгие годы, цена сформированна приемлемо
+                    </p>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/stopwatch-s.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Работаем в любой день недели</span>
+                    <p class="my-2">
+                      Выбирайте удобный для вас день для снятия штор
+                    </p>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  class="col-12 col-sm-6 col-md-6 col-xl-6 mb-3 d-flex flex-nowrap info-bord"
+                >
+                  <div class="d-flex align-items-start p-3">
+                    <img
+                      class="img-fluid img-bord img-bord-services"
+                      src="img/droplet-s.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-bord text-start">
+                    <span>Профессиональное оборудование</span>
+                    <p class="my-2">
+                      Используем экологичные, безопасные моющие средства
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-work-m d-flex justify-content-center">
+            <form action="/stirka.html" target="_blank">
+              <button class="btn-work">Подробнее</button>
+            </form>
+          </div> -->
+        </div>
+
+        <div class="container-fluid p-0 bg-white">
+          <div class="row bg-adv">
+            <div
+              class="text-adv d-flex align-items-center justify-content-center"
+            >
+              <div class="col-12 col-xl-8 my-5 title-line d-flex flex-column">
+                <span class="p-2">Собственное швейное производство</span>
+                <div class="d-flex flex-column align-items-center my-5">
+                  <div class="col-12 col-sm-8 col-xxl-12">
+                    <div class="title-port">
+                      <p class="p-3">
+                        Наши cпециалисты работают с дорогими эксклюзивными
+                        тканями различных фактур и создают из них настоящие
+                        шедевры
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5" style="max-width: 1000px">
+            <div class="d-flex flex-column align-items-center">
+              <div class="title-line title-port my-5">
+                <span>Наши работы до и после</span>
+                <p class="mb-4">
+                  Нашу репутацию мы подтвердили своими работами:
+                </p>
+              </div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/swiper/1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/swiper/10.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next sw-next-work"></div>
+                <div class="swiper-button-prev sw-prev-work"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="my-5 d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="title-port p-3 mt-3">
+                <div class="title-line mt-5">
+                  <span>У нас есть все для вашего интерьера!</span>
+                </div>
+                <p>Только лучшие и качесвтвенные материалы</p>
+              </div>
+              <div
+                class="row mt-5 justify-content-center"
+                style="max-width: 1400px"
+              >
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="200"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/chehol.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/chehol.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/chehol.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Чехлы</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="300"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/tkani.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/tkani.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/tkani.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Ткани</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="400"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/karniz.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/karniz.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/karniz.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Карнизы</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="500"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/podush.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/podush.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/podush.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Подушки</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="600"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/pokr.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/pokr.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/pokr.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Покрывала</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-aos="zoom-out-up"
+                  data-aos-duration="700"
+                  class="col-5 col-sm-4 col-md-2 p-3 card-position"
+                >
+                  <div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-end"
+                    >
+                      <picture>
+                        <source
+                          srcset="img/catalog/furn.webp"
+                          type="image/webp" />
+                        <source
+                          srcset="img/catalog/furn.jpg"
+                          type="image/jpeg" />
+                        <img
+                          class="img-fluid card-design"
+                          src="img/catalog/furn.jpg"
+                          alt=""
+                      /></picture>
+                      <div class="card-text-design text-center">
+                        <div><p>Фурнитура</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-work-m d-flex justify-content-center">
+            <button class="btn-work order-price">Получить расчет</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ./mail.php -->
+
+      <div class="container-fluid line-pl">
+        <div class="row p-2 title-line justify-content-center">
+          <span class="mt-5">
+            Получить подробную <br />
+            консультацию дизайнера
+          </span>
+          <div class="form-decoration p-5">
+            <p class="p-2 d-none d-sm-block">Оставьте свои контактные данные</p>
+            <form class="validate form" id="feedback-form" action="mail.php">
+              <div class="form-body">
+                <div class="form-group">
+                  <label for="name" style="padding: 10px">Ваше имя</label>
+                  <input
+                    oninput="if(/[^a-zA-ZА-Яа-яЁё\s]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"
+                    name="Имя"
+                    type="text"
+                    class="form-control input-name"
+                    id="name"
+                    placeholder="Имя"
+                    pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" style="padding: 10px">E-mail</label>
+                  <input
+                    name="E-mail"
+                    type="email"
+                    class="form-control input-mail"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group d-flex flex-column">
+                  <label for="phone" style="padding: 10px"
+                    >Номер телефона:</label
+                  >
+                  <input
+                    data-phone-pattern
+                    data-phone-clear="false"
+                    name="Телефон"
+                    type="tel"
+                    id="phone"
+                    class="input-medium bfh-phone form-control input-tel"
+                    required
+                  />
+                </div>
+
+                <button type="submit" name="submit" class="btn-form mt-4 mb-3">
+                  Отправить
+                </button>
+
+                <div class="p-2 privacy-text">
+                  Отправляя форму я соглашаюсь что ознакомился и принимаю
+                  условия
+                  <a href="privacy-policy.html">политики конфиденциальности.</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="text-bottom my-5 d-flex flex-column align-items-center justify-content-center"
+          >
+            <span class="mb-2 p-2">
+              Основательница студии текстильного декора «IN DECO» Светлана
+              Улыбина
+            </span>
+
+            <p>
+              «Нам важно уловить настроение клиента, понять, какой декор, ткань
+              и цвет подойдет именно ему.
+            </p>
+
+            <p class="mb-3">
+              Не теряйте времени в поисках, смело заказывайте шторы у нас!».
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="email-holder">
+      <div
+        class="p-4 d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-send img-bord"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+          />
+        </svg>
+        <div class="text-email p-3">
+          <span>
+            Будьте в курсе наших <br />
+            акций и новостей
+          </span>
+        </div>
+
+        <form class="email-validate validate form5" novalidate>
+          <div class="d-flex align-items-start">
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control form-email rounded-0 input-mail5"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-tf" type="button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="pt-5 footer-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 mb-3">
+            <span>ИНФОРМАЦИЯ</span>
+            <div class="d-flex flex-column">
+              <a class="text-white-50">Адрес :</a>
+
+              <div class="d-flex justify-content-center">
+                <p class="text-white p-1">г. Пенза, ул. Пушкина, 43</p>
+              </div>
+
+              <a class="pb-1 text-white-50">Режим работы :</a>
+
+              <p class="p-0 text-white">Пн - Пт c 10:00 - 19:00</p>
+              <p class="p-0 text-white">Сб c 10:00 - 15:00</p>
+              <p class="p-0 text-white">Вск Выходной</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <span>ДЛЯ КЛИЕНТА</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/-/CCU7b4FC0B"
+                class="text-client p-1"
+                >Где мы находимся</a
+              >
+
+              <a href="/rekvizit.html" class="text-client p-1">Реквизиты</a>
+
+              <a href="/oferta.html" class="text-client p-1"
+                >Публичная оферта</a
+              >
+
+              <a href="/privacy-policy.html" class="text-client p-1"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 mb-3">
+            <span>КОНТАКТЫ</span>
+            <div class="d-flex flex-column text-number">
+              <a class="text-white-50">Номера телефонов :</a>
+              <div class="pt-1 d-flex justify-content-center">
+                <p class="">8 (8412) 22-19-17</p>
+              </div>
+              <p class="">8 (927) 368-06-12</p>
+
+              <p class="pb-1 text-white-50">Почта :</p>
+              <div class="d-flex justify-content-center">
+                <a href="mailto:" class="text-mail p-0 ps-2">7.am@mail.ru</a>
+              </div>
+
+              <div class="list-unstyled d-flex justify-content-center pt-2">
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://wa.me/+79273680612"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/whatsapp.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/instagram.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://vk.com/svetlana_uluybina"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/vk.svg"
+                    alt=""
+                /></a>
+                <a class="p-1" target="_blank" href="https://t.me/INDECO_PNZ">
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/telegram.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-white-50 d-flex flex-column flex-sm-row justify-content-center pt-4 my-4 border-top"
+          >
+            <p>&copy; ( 2023 г. ) Компания, InDeco. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal portfolio -->
+    <!-- gostinya -->
+    <div class="modal fade p-0" id="gostinya-modal" role="dialog" tabindex="-1">
+      <div
+        class="row align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- vtoroy svet -->
+    <div class="modal fade p-0" id="vt-svet-modal" role="dialog" tabindex="-1">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper1 rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- kuhnya -->
+    <div class="modal fade p-0" id="kuhnya-modal" role="dialog" tabindex="-1">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper2 rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- spalnya -->
+    <div class="modal fade p-0" id="spalnya-modal" role="dialog" tabindex="-1">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper3 rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- detskya -->
+    <div class="modal fade p-0" id="detskya-modal" role="dialog" tabindex="-1">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper4 rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sanuzel -->
+    <div class="modal fade p-0" id="sanuzel-modal" role="dialog" tabindex="-1">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="modal-dialog modal-xl p-2">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  style="z-index: 2"
+                  type="button"
+                  class="btn-close btn-close-white btn-close-modal"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="swiper modalSwiper5 rounded-0">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/1.webp" type="image/webp" />
+                      <source srcset="/img/slider/1.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/1.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/2.webp" type="image/webp" />
+                      <source srcset="/img/slider/2.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/2.jpg" alt=""
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="/img/slider/3.webp" type="image/webp" />
+                      <source srcset="/img/slider/3.jpg" type="image/jpeg" />
+                      <img class="img-fluid" src="/img/slider/3.jpg" alt=""
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-next modal-next"></div>
+                <div class="swiper-button-prev modal-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal price -->
+    <div
+      class="modal fade"
+      id="image-modal"
+      tabindex="-1"
+      role="dialog"
+      style="padding: 17px"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn-close btn-close-white btn-close-modal"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <img class="img-fluid d-block mx-auto" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal заказ -->
+    <div class="modal fade p-0" id="order-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-price">
+        <div class="modal-content bg-modal">
+          <div class="modal-body">
+            <div class="d-flex justify-content-end p-2">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="px-4" style="max-width: 450px">
+              <div class="d-flex justify-content-center">
+                <span class="modal-title p-2">Получить консультацию</span>
+              </div>
+              <p class="p-2">Заполните форму и дизайнер свяжется с вами</p>
+              <form
+                class="validate form1"
+                novalidate
+                id="feedback-form"
+                action="mail.php"
+              >
+                <div class="form-group mb-3">
+                  <label for="namme">Ваше имя</label>
+                  <input
+                    oninput="if(/[^a-zA-ZА-Яа-яЁё\s]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"
+                    name="Имя"
+                    type="text"
+                    class="form-control input-name1"
+                    id="name"
+                    placeholder="Имя"
+                    pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3 d-flex flex-column">
+                  <label for="phone">Номер телефона</label>
+                  <input
+                    data-phone-pattern
+                    data-phone-clear="false"
+                    name="Телефон"
+                    type="tel"
+                    id="phone"
+                    class="input-medium bfh-phone form-control input-tel1"
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  name="submit"
+                  class="btn btn-modal mt-4 mb-3"
+                >
+                  Отправить
+                </button>
+                <div class="p-1 pb-5 modal-t-bottom">
+                  Отправляя форму я соглашаюсь что ознакомился и принимаю
+                  условия
+                  <a href="privacy-policy.html">политики конфиденциальности.</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatsapp d-flex align-items-center justify-content-center">
+      <div class="pulse">
+        <a href="https://wa.me/+79273680612" target="_blank">
+          <div class="whatsapp-b"></div
+        ></a>
+        <div class="icons-w d-flex align-items-center justify-content-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+        </div>
+        <div class="text-w">Написать в Whatsapp</div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ajmail.js"></script>
+    <script src="js/ajform.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* preloader */
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: #fff;
+  opacity: 1;
+  font-size: 50px;
+  background: linear-gradient(180deg, #ffffff 0, #ffffff 100%);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  animation: text 5s;
+}
+
+@keyframes text {
+  0% {
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}

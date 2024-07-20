@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>InDeco</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/just-validate.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="text-bg-dark">
+      <div class="container border-nav p-2">
+        <div class="nav d-flex align-items-end nav-top-media">
+          <div class="px-1 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/marker.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-nav-top d-flex justify-content-end d-none d-sm-block"
+          >
+            <p>г. Пенза ул. Пушкина, 43</p>
+          </div>
+          <div class="px-2 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/time.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex text-time me-auto d-none d-sm-block">
+            <p>Пн-Пт с 10:00 - 19:00 Сб с 10:00 - 15:00</p>
+          </div>
+          <div
+            class="social-top px-1 d-flex align-items-end justify-content-center"
+          >
+            <p class="m-0 pe-2 d-none d-lg-block">Напиши нам:</p>
+            <div>
+              <a
+                class="whatsapp-media"
+                target="_blank"
+                href="https://wa.me/+79273680612"
+              >
+                <img
+                  id="whatsapp"
+                  class="img-bord img-fluid img-size"
+                  src="/img/whatsapp.svg"
+                  alt=""
+              /></a>
+              <a
+                class="telegram-media"
+                target="_blank"
+                href="https://t.me/INDECO_PNZ"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/telegram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="vk-media"
+                target="_blank"
+                href="https://vk.com/svetlana_uluybina"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/vk.svg"
+                  alt=""
+              /></a>
+              <a
+                class="instagram-media"
+                target="_blank"
+                href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/instagram.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="d-flex align-items-center number-phone d-block d-sm-none"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="d-flex text-bg-dark mb-0 sticky-top">
+      <div class="container px-0">
+        <div class="row">
+          <div class="p-0 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg">
+              <a href="#" class="navbar-brand nav-left d-xxl-none">
+                <img src="/img/logoMain.jpg" width="220" height="50" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav align-items-center">
+                  <li>
+                    <a href="/index.html" class="nav-link text-nav-animation"
+                      >ГЛАВНАЯ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#price')"
+                      class="nav-link price-scroll text-nav-animation"
+                      >ЦЕНЫ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#catalog')"
+                      class="nav-link btn-catalog text-nav-animation"
+                      >ПОРТФОЛИО</a
+                    >
+                  </li>
+
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mx-5 d-none d-xxl-block"
+                  >
+                    <img
+                      src="/img/logoMain.jpg"
+                      width="220"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <li>
+                    <a href="uslugi.html" class="nav-link text-nav-animation"
+                      >УСЛУГИ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="company.html"
+                      class="nav-link text-nav-animation nav-text-media"
+                      >О НАС</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-nav-animation"
+                      >КОНТАКТЫ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="d-flex align-items-center number-phone mb-auto d-none d-sm-block"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord mb-1" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid title-line px-0">
+        <div class="row my-5">
+          <div
+            class="mt-5 d-flex align-items-center justify-content-center mb-5"
+          >
+            <h1>
+              Предоставляем услуги <br />
+              по пошиву
+            </h1>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <div class="row" style="max-width: 1700px">
+              <div
+                class="accordion d-flex flex-wrap justify-content-center"
+                id="accordionExample"
+              >
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <img src="img/usligi/design.jpg" alt="" />
+                          <div class="position-acd-text">Услуги дизайнера</div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span> Наши дизайнеры:</span>
+                        <p>1. Выбирают ткани, карнизы, фурнитуру</p>
+                        <p>2. Визуализируют идеи и призентуют их заказчику</p>
+                        <p>3. Дают техническое задание на пошив</p>
+                        <p>4. Контролируют этапы проекта</p>
+                      </div>
+                      <button class="btn-price order-price" type="button">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseTwo"
+                        >
+                          <img src="img/usligi/posh.jpg" alt="" />
+                          <div class="position-acd-text">Пошив штор</div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span>Пошив штор необходим, если:</span>
+                        <p>
+                          1. Вы не знаете, как подчеркнуть все особенности
+                          вашего интерьера
+                        </p>
+                        <p>2. Вы цените качество и безупречный вид</p>
+                        <p>3. Хотите создать единое гармоничное пространство</p>
+                        <p>
+                          4. Хотите быстро решить организационные вопросы по
+                          развешиванию и установке карнизов
+                        </p>
+                      </div>
+                      <button class="btn-price order-price">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="true"
+                          aria-controls="collapseThree"
+                        >
+                          <img src="img/usligi/okno.jpg" alt="" />
+                          <div class="position-acd-text">Замеры окон</div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span>
+                          Полный спектр услуг по изготовлению карнизов:</span
+                        >
+                        <p>1. Точные замеры и монтаж</p>
+                        <p>
+                          2. Специалисты выполняют заказы по индивидуальным
+                          размерам, арки и эркеры нестандартной формы
+                        </p>
+                        <p>
+                          3. Большой опыт позволяет нам быстро, прочно и
+                          аккуратно установить карнизы
+                        </p>
+                      </div>
+                      <button class="btn-price order-price">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="true"
+                          aria-controls="collapseFour"
+                        >
+                          <img src="img/usligi/rulonka.jpg" alt="" />
+                          <div class="position-acd-text">Изготовление штор</div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span> У нас есть все виды штор:</span>
+                        <p>1. Портьеры</p>
+                        <p>2. Тюль</p>
+                        <p>3. Римские шторы</p>
+                        <p>4. Рулонные шторы</p>
+                        <p>5. Жалюзи</p>
+                      </div>
+                      <button class="btn-price order-price">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="true"
+                          aria-controls="collapseFive"
+                        >
+                          <img src="img/usligi/karniz.jpg" alt="" />
+                          <div class="position-acd-text">
+                            Установка карнизов
+                          </div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span>
+                          Полный спектр услуг по изготовлению карнизов:</span
+                        >
+                        <p>1. Точные замеры и монтаж</p>
+                        <p>
+                          2. Специалисты выполняют заказы по индивидуальным
+                          размерам, арки и эркеры нестандартной формы
+                        </p>
+                        <p>
+                          3. Большой опыт позволяет нам быстро, прочно и
+                          аккуратно установить карнизы
+                        </p>
+                      </div>
+                      <button class="btn-price order-price">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-5 mx-4">
+                  <div
+                    class="accordion-item my-4 border-0"
+                    style="max-width: 1000px"
+                  >
+                    <div class="position-acd">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button
+                          class="accordion-button p-0"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix"
+                          aria-expanded="true"
+                          aria-controls="collapseSix"
+                        >
+                          <img src="img/usligi/naves.jpg" alt="" />
+                          <div class="position-acd-text">Навеска штор</div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSix"
+                      class="accordion-collapse collapse p-0"
+                      aria-labelledby="headingSix"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body p-2">
+                        <span>
+                          Полный спектр услуг по изготовлению карнизов:</span
+                        >
+                        <p>1. Точные замеры и монтаж</p>
+                        <p>
+                          2. Специалисты выполняют заказы по индивидуальным
+                          размерам, арки и эркеры нестандартной формы
+                        </p>
+                        <p>
+                          3. Большой опыт позволяет нам быстро, прочно и
+                          аккуратно установить карнизы
+                        </p>
+                      </div>
+                      <button class="btn-price order-price">
+                        Узнать стоимость
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="container my-5" style="max-width: 1500px">
+            <div class="row text-center title-clean">
+              <div class="col-12 my-5 text-start">
+                <h1>
+                  Чистка <br />
+                  и стирка штор
+                </h1>
+              </div>
+
+              <div class="container p-0">
+                <div class="row bg-clean flex-column">
+                  <div class="text-start vertical-main" style="height: 100px">
+                    <div class="col-12 vertical-line1">
+                      <img src="img/check-circle.svg" alt="" />
+                    </div>
+                    <div class="col-12 vertical-line2">
+                      <img src="img/check-circle.svg" alt="" />
+                    </div>
+
+                    <div class="col-12 vertical-line3">
+                      <img src="img/check-circle.svg" alt="" />
+                    </div>
+
+                    <div class="col-12 vertical-line4">
+                      <img src="img/check-circle.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="text-clean-page d-flex justify-content-center">
+                    <p class="col-12 col-md-8 col-xxl-8">
+                      <span>Что мы стираем</span>Занавески из тюля, шторы и
+                      портьеры из обычной портьерной ткани, шторы и портьеры из
+                      плотного материала.
+                    </p>
+                  </div>
+
+                  <div class="text-clean-page d-flex justify-content-center">
+                    <p class="col-12 col-md-8 col-xxl-8 text-cleanTwo">
+                      <span>Наши преимущества</span>В работе используем
+                      полу-профиссиональнрое оборудование и безопасные моющие
+                      средства. Оперативное выполнение услуг, за кратчайшие
+                      сроки.
+                    </p>
+                  </div>
+
+                  <div class="text-clean-page d-flex justify-content-center">
+                    <p class="col-12 col-md-8 col-xxl-8 text-cleanThree">
+                      <span>Следует отметить</span>
+                      Что основную трудность представляет именно снятие тяжелых
+                      штор и навешивание их на прежнее место. Данную задачу
+                      следует поручать профессионалам.
+                    </p>
+                  </div>
+                  <div class="text-clean-page d-flex justify-content-center">
+                    <p class="col-12 col-md-8 col-xxl-8 text-cleanFour">
+                      <span>Наши специалисты</span>Обладают богатым опытом в
+                      этой сфере, мы вернем Вашему текстилю свежий вид и
+                      первоначальный лоск.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container mb-5 order-clean">
+                <div class="row d-flex justify-content-center">
+                  <h1 class="my-5">Закажите стирку штор в Пензе</h1>
+                  <div
+                    class="col-12 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                  >
+                    <span>1. ОФОРМИТЕ ЗАЯВКУ</span>
+                    <p>Мы перезвоним, выберем удобное для вас время</p>
+                  </div>
+                  <div
+                    class="col-12 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                  >
+                    <span>2. ПРИЕДЕМ К ВАМ </span>
+                    <p>Снимем и отвезёт шторы для стирки</p>
+                  </div>
+                  <div
+                    class="col-12 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                  >
+                    <span>3. ПОВЕСИМ ШТОРЫ</span>
+                    <p>Привезём и повесим чистые выглаженные шторы</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-clean-bg my-5">
+                <p class="p-2 p-4">
+                  Снимем, заберём шторы, вернём и повесим чистыми и
+                  выглаженными!
+                </p>
+                <form
+                  class="validate form3 d-flex flex-wrap justify-content-center"
+                  novalidate
+                  action="mail.php"
+                >
+                  <div class="form-group col-12 col-sm-6 col-xxl-3 p-3">
+                    <input
+                      oninput="if(/[^a-zA-ZА-Яа-яЁё\s]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"
+                      type="name"
+                      name="Имя"
+                      class="form-control form-clean input-name3"
+                      id="inputName"
+                      placeholder="Имя"
+                      pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12 col-sm-6 col-xxl-3 p-3">
+                    <input
+                      data-phone-pattern
+                      data-phone-clear="false"
+                      type="phone"
+                      name="Телефон"
+                      id="phone"
+                      placeholder="+7 (___) ___-____"
+                      class="input-medium bfh-phone form-control form-clean input-tel3"
+                      required
+                    />
+                  </div>
+                  <div class="p-3">
+                    <button type="submit" class="btn-clean">Заказать</button>
+                  </div>
+                </form>
+                <div class="pb-3 privacy-clear">
+                  Отправляя форму я соглашаюсь что ознакомился и принимаю
+                  условия
+                  <a href="privacy-policy.html">политики конфиденциальности.</a>
+                </div>
+              </div>
+
+              <div class="col-12 text-start title-decoration my-5">
+                <span>Цены на стирку и глажку штор </span>
+                <p class="py-3">В услугу входит:</p>
+                <ul>
+                  <li>Выезд к вам для снятия штор</li>
+                  <li>
+                    Бережная стирка и чистка штор, почти из любых материалов
+                  </li>
+                  <li>Глажка текстильных изделий: штор, ламбрекенов</li>
+                  <li>Доставка и навешивание текстиля после стирки обратно</li>
+                </ul>
+              </div>
+              <table class="table table-striped title-decoration table-info">
+                <thead>
+                  <tr class="table-active">
+                    <th scope="col-6"><span>Наименование</span></th>
+                    <th scope="col-6"><span>Стоимость руб.</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><p>Занавески из тюля за 1 м кв.</p></th>
+                    <td><p>100</p></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <p>Шторы, портьеры плотные за 1 м кв.</p>
+                    </th>
+                    <td><p>150</p></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <p>Шторы на подкладке 1 м кв.</p>
+                    </th>
+                    <td><p>200</p></td>
+                  </tr>
+                </tbody>
+
+                <thead>
+                  <tr class="table-active">
+                    <th scope="col-6"><span>Наценка за сложность</span></th>
+                    <th scope="col-6"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <p>
+                        На эксклюзивные вещи из деликатных тканей, требующих
+                        ручной обработки
+                      </p>
+                    </th>
+                    <td><p>20%</p></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <p>
+                        За снятие и развешивание штор (Снятие карниза, высота
+                        штор выше 3м)
+                      </p>
+                    </th>
+                    <td><p>от 10%</p></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <p>
+                        Выезд по области и за её пределы (цена расчитывается за
+                        км.)
+                      </p>
+                    </th>
+                    <td><p>доп. плата</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="container m-0 title-clean title-decoration">
+              <div class="col-12 text-start mt-5">
+                <span>Для чего и как часто стирают шторы</span>
+              </div>
+              <p class="py-3">
+                Шторы со временем подвержены загрязнениям вследствие следующих
+                причин:
+              </p>
+              <ul>
+                <li>Прямой контакт с загрязняющими веществами</li>
+                <li>Оседание пыли и попадание ее внутрь структуры ткани</li>
+                <li>Впитывание волокнами сильных запахов</li>
+                <li>Выцветание от солнечных лучей</li>
+                <li>
+                  Истирание отдельных участков штор вследствие постоянного
+                  контакта с предметами в помещении
+                </li>
+              </ul>
+              <p class="py-3">Частота штор зависит от трёх факторов:</p>
+              <ul>
+                <li>Назначение помещений</li>
+                <li>Материал из которого изготовлены шторы</li>
+                <li>
+                  В условиях обычной городской квартиры рекомендуется стирка
+                  штор раз в 6 месяцев
+                </li>
+              </ul>
+            </div>
+            <div class="container m-0 pb-5 title-clean jc-center">
+              <div class="row justify-content-start">
+                <span class="mt-5 mb-3">Контакты:</span>
+                <div
+                  class="col-10 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                >
+                  <span>Телефоны:</span>
+                  <p>+7 (987) 512-61-91</p>
+                  <p>+7 (987) 512-06-15</p>
+                </div>
+                <div
+                  class="col-10 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                >
+                  <span>E-mail:</span>
+                  <p>7.am@mail.ru</p>
+                  <p>cleanC@gmail.ru</p>
+                </div>
+                <div
+                  class="col-10 col-sm-6 col-md-3 col-xxl-3 m-2 p-3 text-order"
+                >
+                  <span>Часы работы:</span>
+                  <p>Понедельник-Воскресенье</p>
+                  <p>10:00 - 21:00</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <div class="email-holder">
+      <div
+        class="p-4 d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-send img-bord"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+          />
+        </svg>
+        <div class="text-email p-3">
+          <span>
+            Будьте в курсе наших <br />
+            акций и новостей
+          </span>
+        </div>
+
+        <form class="email-validate validate form5" novalidate>
+          <div class="d-flex align-items-start">
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control form-email rounded-0 input-mail5"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-tf" type="button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="pt-5 footer-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 mb-3">
+            <span>ИНФОРМАЦИЯ</span>
+            <div class="d-flex flex-column">
+              <a class="text-white-50">Адрес :</a>
+
+              <div class="d-flex justify-content-center">
+                <p class="text-white p-1">г. Пенза, ул. Пушкина, 43</p>
+              </div>
+
+              <a class="pb-1 text-white-50">Режим работы :</a>
+
+              <p class="p-0 text-white">Пн - Пт c 10:00 - 19:00</p>
+              <p class="p-0 text-white">Сб c 10:00 - 15:00</p>
+              <p class="p-0 text-white">Вск Выходной</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <span>ДЛЯ КЛИЕНТА</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/-/CCU7b4FC0B"
+                class="text-client p-1"
+                >Где мы находимся</a
+              >
+              <a href="/rekvizit.html" class="text-client p-1">Реквизиты</a>
+
+              <a href="/oferta.html" class="text-client p-1"
+                >Публичная оферта</a
+              >
+              <a href="/privacy-policy.html" class="text-client p-1"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 mb-3">
+            <span>КОНТАКТЫ</span>
+            <div class="d-flex flex-column text-number">
+              <a class="text-white-50">Номера телефонов :</a>
+              <div class="pt-1 d-flex justify-content-center">
+                <p class="">8 (8412) 22-19-17</p>
+              </div>
+              <p class="">8 (927) 368-06-12</p>
+
+              <p class="pb-1 text-white-50">Почта :</p>
+              <div class="d-flex justify-content-center">
+                <a href="mailto:" class="text-mail p-0 ps-2">7.am@mail.ru</a>
+              </div>
+
+              <div class="list-unstyled d-flex justify-content-center pt-2">
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://wa.me/+79273680612"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/whatsapp.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/instagram.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://vk.com/svetlana_uluybina"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/vk.svg"
+                    alt=""
+                /></a>
+                <a class="p-1" target="_blank" href="https://t.me/INDECO_PNZ">
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/telegram.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-white-50 d-flex flex-column flex-sm-row justify-content-center pt-4 my-4 border-top"
+          >
+            <p>&copy; ( 2023 г. ) Компания, InDeco. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="whatsapp d-flex align-items-center justify-content-center">
+      <div class="pulse">
+        <a href="https://wa.me/+79273680612" target="_blank">
+          <div class="whatsapp-b"></div
+        ></a>
+        <div class="icons-w d-flex align-items-center justify-content-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+        </div>
+        <div class="text-w">Написать в Whatsapp</div>
+      </div>
+    </div>
+
+    <div class="modal fade p-0" id="order-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-price">
+        <div class="modal-content bg-modal">
+          <div class="modal-body">
+            <div class="d-flex justify-content-end p-2">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="px-4" style="max-width: 450px">
+              <span class="modal-title d-flex justify-content-center p-2"
+                >Получить консультацию</span
+              >
+              <p class="p-2">Заполните форму и дизайнер свяжется с вами</p>
+              <form
+                class="validate form6"
+                novalidate
+                id="feedback-form"
+                action="mail.php"
+              >
+                <div class="form-group mb-3">
+                  <label for="namme">Ваше имя</label>
+                  <input
+                    oninput="if(/[^a-zA-ZА-Яа-яЁё\s]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"
+                    name="Имя"
+                    type="text"
+                    class="form-control input-name6"
+                    id="name"
+                    placeholder="Имя"
+                    pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3 d-flex flex-column">
+                  <label for="phone">Номер телефона</label>
+                  <input
+                    data-phone-pattern
+                    data-phone-clear="false"
+                    name="Телефон"
+                    type="tel"
+                    id="phone"
+                    class="input-medium bfh-phone form-control input-tel6"
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  name="submit"
+                  class="btn btn-modal mt-4 mb-3"
+                >
+                  Отправить
+                </button>
+                <div class="p-1 pb-5 modal-t-bottom">
+                  Отправляя форму я соглашаюсь что ознакомился и принимаю
+                  условия
+                  <a href="privacy-policy.html">политики конфиденциальности.</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js?4"></script>
+    <script src="js/ajmail.js"></script>
+    <script src="js/ajuslugi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

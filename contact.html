@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover "
+    />
+    <title>InDeco</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/just-validate.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="text-bg-dark">
+      <div class="container border-nav p-2">
+        <div class="nav d-flex align-items-end nav-top-media">
+          <div class="px-1 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/marker.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="text-nav-top d-flex justify-content-end d-none d-sm-block"
+          >
+            <p>г. Пенза ул. Пушкина, 43</p>
+          </div>
+          <div class="px-2 d-none d-sm-block d-sm-none d-md-block">
+            <img
+              class="img-phone img-bord img-fluid"
+              src="/img/time.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="d-flex text-time me-auto d-none d-sm-block">
+            <p>Пн-Пт с 10:00 - 19:00 Сб с 10:00 - 15:00</p>
+          </div>
+          <div
+            class="social-top px-1 d-flex align-items-end justify-content-center"
+          >
+            <p class="m-0 pe-2 d-none d-lg-block">Напиши нам:</p>
+            <div>
+              <a
+                class="whatsapp-media"
+                target="_blank"
+                href="https://wa.me/+79273680612"
+              >
+                <img
+                  id="whatsapp"
+                  class="img-bord img-fluid img-size"
+                  src="/img/whatsapp.svg"
+                  alt=""
+              /></a>
+              <a
+                class="telegram-media"
+                target="_blank"
+                href="https://t.me/INDECO_PNZ"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/telegram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="vk-media"
+                target="_blank"
+                href="https://vk.com/svetlana_uluybina"
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/vk.svg"
+                  alt=""
+              /></a>
+              <a
+                class="instagram-media"
+                target="_blank"
+                href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+              >
+                <img
+                  class="img-bord img-fluid img-size"
+                  src="/img/instagram.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="d-flex align-items-center number-phone d-block d-sm-none"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="d-flex text-bg-dark mb-0 sticky-top">
+      <div class="container px-0">
+        <div class="row">
+          <div class="p-0 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg">
+              <a href="#" class="navbar-brand nav-left d-xxl-none">
+                <img src="/img/logoMain.jpg" width="220" height="50" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav align-items-center">
+                  <li>
+                    <a href="/index.html" class="nav-link text-nav-animation"
+                      >ГЛАВНАЯ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#price')"
+                      class="nav-link price-scroll text-nav-animation"
+                      >ЦЕНЫ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html"
+                      onclick="slowScroll('#catalog')"
+                      class="nav-link btn-catalog text-nav-animation"
+                      >ПОРТФОЛИО</a
+                    >
+                  </li>
+
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mx-5 d-none d-xxl-block"
+                  >
+                    <img
+                      src="/img/logoMain.jpg"
+                      width="220"
+                      height="50"
+                      alt=""
+                    />
+                  </a>
+                  <li>
+                    <a href="uslugi.html" class="nav-link text-nav-animation"
+                      >УСЛУГИ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="company.html"
+                      class="nav-link text-nav-animation nav-text-media"
+                      >О НАС</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-nav-animation"
+                      >КОНТАКТЫ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="d-flex align-items-center number-phone mb-auto d-none d-sm-block"
+            >
+              <div class="img-nav-telephone">
+                <img class="img-bord mb-1" src="/img/telephone.svg" alt="" />
+                <a href="tel:+78412221917">8 (8412) 22-19-17</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container px-0">
+        <div class="row">
+          <div
+            class="title-line title-port mt-5 mb-0 d-flex flex-column align-items-center justify-content-center"
+          >
+            <span>Контакты</span>
+            <p class="d-flex justify-content-center mb-5">
+              Свяжитесь с нами любым удобным способом
+            </p>
+          </div>
+
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div
+                class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-2 p-3 text-order"
+              >
+                <span>Наш адрес:</span>
+                <p>г. Пенза</p>
+                <p>ул. Пушкина, 43</p>
+              </div>
+              <div
+                class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-2 p-3 text-order"
+              >
+                <span>Телефоны:</span>
+                <p>8 (8412) 22-19-17</p>
+                <p>8 (927) 368-06-12</p>
+              </div>
+              <div
+                class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-2 p-3 text-order"
+              >
+                <span>E-mail:</span>
+                <p>7.am@mail.ru</p>
+              </div>
+              <div
+                class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-2 p-3 text-order"
+              >
+                <span>Способы связи:</span>
+                <div class="d-flex social-content pt-2">
+                  <div class="list-unstyled d-flex justify-content-center">
+                    <a
+                      class="p-2"
+                      target="_blank"
+                      href="https://wa.me/89273680612"
+                    >
+                      <img
+                        class="img-social img-c img-fluid"
+                        src="/img/whatsapp-c.svg"
+                        alt=""
+                    /></a>
+                    <a
+                      class="p-2"
+                      target="_blank"
+                      href="https://vk.com/svetlana_uluybina"
+                    >
+                      <img
+                        class="img-social img-c img-fluid"
+                        src="/img/vk-c.svg"
+                        alt=""
+                    /></a>
+                    <a
+                      class="p-2"
+                      target="_blank"
+                      href="https://t.me/INDECO_PNZ"
+                    >
+                      <img
+                        class="img-social img-c img-fluid"
+                        src="/img/telegram-c.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-2 p-3 text-order"
+              >
+                <span>Часы работы:</span>
+                <p>Пн - Пт 10:00 - 19:00</p>
+                <p>Сб 10:00 - 15:00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="title-port">
+            <div class="p-5">
+              <p>Нас легко узнать по вывеске</p>
+            </div>
+          </div>
+          <div
+            class="container mb-5 p-3"
+            style="max-width: 1200px; overflow: hidden"
+          >
+            <div class="row">
+              <div class="swiper1 mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      style="border-radius: 10px"
+                      src="/img/contacts/vhod.jpg"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      style="border-radius: 10px"
+                      src="/img/contacts/ulica.jpg"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      style="border-radius: 10px"
+                      src="/img/contacts/ulica1.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex flex-column align-items-center title-port">
+                  <div class="p-5">
+                    <p>Где мы находимся ?</p>
+                  </div>
+                  <div
+                    style="position: relative; overflow: hidden; width: 100%"
+                  >
+                    <a
+                      href="https://yandex.ru/maps/org/in_deco/111669565772/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >In deco</a
+                    ><a
+                      href="https://yandex.ru/maps/49/penza/category/curtains_curtain_rods/184108007/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Шторы, карнизы в Пензе</a
+                    ><a
+                      href="https://yandex.ru/maps/49/penza/category/interior_goods/184108005/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Товары для интерьера в Пензе</a
+                    >
+                    <div id="wrapMap">
+                      <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=44.993873%2C53.198381&mode=search&oid=111669565772&ol=biz&z=17.56"
+                        width="100%"
+                        height="600"
+                        frameborder="0"
+                        allowfullscreen="true"
+                        style="pointer-events: none"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="email-holder">
+      <div
+        class="p-4 d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-send img-bord"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+          />
+        </svg>
+        <div class="text-email p-3">
+          <span>
+            Будьте в курсе наших <br />
+            акций и новостей
+          </span>
+        </div>
+
+        <form class="email-validate validate form5" novalidate>
+          <div class="d-flex align-items-start">
+            <div class="form-group">
+              <input
+                type="email"
+                name="E-mail"
+                class="form-control form-email rounded-0 input-mail5"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-tf" type="button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="pt-5 footer-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 mb-3">
+            <span>ИНФОРМАЦИЯ</span>
+            <div class="d-flex flex-column">
+              <a class="text-white-50">Адрес :</a>
+
+              <div class="d-flex justify-content-center">
+                <p class="text-white p-1">г. Пенза, ул. Пушкина, 43</p>
+              </div>
+
+              <a class="pb-1 text-white-50">Режим работы :</a>
+
+              <p class="p-0 text-white">Пн - Пт c 10:00 - 19:00</p>
+              <p class="p-0 text-white">Сб c 10:00 - 15:00</p>
+              <p class="p-0 text-white">Вск Выходной</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <span>ДЛЯ КЛИЕНТА</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/-/CCU7b4FC0B"
+                class="text-client p-1"
+                >Где мы находимся</a
+              >
+
+              <a href="/rekvizit.html" class="text-client p-1">Реквизиты</a>
+
+              <a href="/oferta.html" class="text-client p-1"
+                >Публичная оферта</a
+              >
+
+              <a href="/privacy-policy.html" class="text-client p-1"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 mb-3">
+            <span>КОНТАКТЫ</span>
+            <div class="d-flex flex-column text-number">
+              <a class="text-white-50">Номера телефонов :</a>
+              <div class="pt-1 d-flex justify-content-center">
+                <p class="">8 (8412) 22-19-17</p>
+              </div>
+              <p class="">8 (927) 368-06-12</p>
+
+              <p class="pb-1 text-white-50">Почта :</p>
+              <div class="d-flex justify-content-center">
+                <a href="mailto:" class="text-mail p-0 ps-2">7.am@mail.ru</a>
+              </div>
+
+              <div class="list-unstyled d-flex justify-content-center pt-2">
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://wa.me/+79273680612"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/whatsapp.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://instagram.com/indeco_pnz?igshid=YmMyMTA2M2Y="
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/instagram.svg"
+                    alt=""
+                /></a>
+                <a
+                  class="p-1"
+                  target="_blank"
+                  href="https://vk.com/svetlana_uluybina"
+                >
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/vk.svg"
+                    alt=""
+                /></a>
+                <a class="p-1" target="_blank" href="https://t.me/INDECO_PNZ">
+                  <img
+                    class="img-social img-bord img-fluid img-size"
+                    src="/img/telegram.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-white-50 d-flex flex-column flex-sm-row justify-content-center pt-4 my-4 border-top"
+          >
+            <p>&copy; ( 2023 г. ) Компания, InDeco. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="whatsapp d-flex align-items-center justify-content-center">
+      <div class="pulse">
+        <a href="https://wa.me/+79273680612" target="_blank">
+          <div class="whatsapp-b"></div
+        ></a>
+        <div class="icons-w d-flex align-items-center justify-content-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+        </div>
+        <div class="text-w">Написать в Whatsapp</div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ajmail.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
